@@ -57,7 +57,7 @@ li:hover {
     background-color: var(--hover-color);
 }
 
-#hamMenu {
+#optionsMenu {
     display: block;
     position: absolute;
     top: 15px;
@@ -65,12 +65,12 @@ li:hover {
     font-size: 40px;
 }
 
-#hamMenu::before {
+#optionsMenu::before {
     content: '☰';
 
 }
 
-#hamMenu.show::before {
+#optionsMenu.show::before {
     content: 'X'
 }
 

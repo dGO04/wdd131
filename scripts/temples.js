@@ -1,6 +1,6 @@
 const currentYear = document.querySelector('#currentYear')
 const lastModification = document.querySelector('#lastModification')
-const hamburgerMenu = document.querySelector('#hamMenu')
+const hamburgerMenu = document.querySelector('#optionsMenu')
 const listItem = document.querySelector('ul')
 
 const today = new Date();
