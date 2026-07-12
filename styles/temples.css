@@ -9,7 +9,7 @@
     --secondary-color: rgba(0, 0, 0);
     --header-title-color: rgb(247, 249, 249);
     --heading-font: 'Open Sans', sans-serif;
-    --hover-color: gray;
+    --hover-color: rgb(66, 61, 61);
 }
 
 body {
