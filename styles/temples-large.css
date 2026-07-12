@@ -1,0 +1,30 @@
+@media screen and (min-width: 45rem) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hamMenu {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        flex-flow: row nowrap;
+    }
+
+    ul li {
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+}
+
+
+@media screen and (min-width: 70rem) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
