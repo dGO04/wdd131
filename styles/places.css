@@ -16,7 +16,8 @@ header, footer {
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--heading-color);
-    font-size: 0.4rem;
+    font-size: 0.6rem;
+    width: inherit;
 }
 
 header {
@@ -25,6 +26,8 @@ header {
 
 main {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 picture img {
@@ -39,7 +42,7 @@ picture img {
     background-color: var(--heading-color);
     color: var(--card-text-color);
     padding: 10px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .card li {
@@ -70,22 +73,24 @@ picture img {
 footer {
     border-top: 5px solid var(--border-color);
     background-color: var(--card-text-color);
+    font-size: 0.7rem;
 }
 
 /*--------------------Large Views----------------*/
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 
     header {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     footer {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
 
     .card {
         border-radius: 5px;
+        font-size: 1rem;
     }
 
     .weather {
