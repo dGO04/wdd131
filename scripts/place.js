@@ -6,23 +6,7 @@ const windChill = document.querySelector('#windChill')
 const windTemperature = 31
 const windSpeed = 5
 
-function calculateWindChill(windTemperature, windSpeed) {
-    /*Calculate the wind chill only if wind temperature
-    and wind speed meet the requirements
-    Parameteres: 
-    -windTemperature: The temperature of the wind
-    -windSpeed: The speed of the wind
-    Return: The temperature in degrees celcius*/
-    if(windTemperature <= 10) {
-        if(windSpeed > 4.8) {
-            return `${(13.12 + 0.6215 * windTemperature - 11.37 * windSpeed ** 0.16 + 0.3965 * windTemperature * windSpeed ** 0.16).toFixed(2)}°C`
-        } else {
-            return 'N/A'
-        }
-    } else {
-        return 'N/A'
-    }
-}
+const calculateWindChill = (windTemperature, windSpeed) => (windTemperature <= 10 && windSpeed > 4.8) ? `${(13.12 + 0.6215 * windTemperature - 11.37 * windSpeed ** 0.16 + 0.3965 * windTemperature * windSpeed ** 0.16).toFixed(2)}°C` : 'N/A'
 
 //Assign the current year to the span object in the footer
 year.textContent =  currentYear
