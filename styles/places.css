@@ -74,7 +74,7 @@ footer {
 
 /*--------------------Large Views----------------*/
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1000px) {
 
     header {
         font-size: 0.7rem;
