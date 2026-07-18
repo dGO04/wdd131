@@ -16,12 +16,13 @@ header, footer {
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--heading-color);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     width: inherit;
 }
 
 header {
     border-bottom: 5px solid var(--border-color);
+    padding: 20px;
 }
 
 main {
@@ -85,12 +86,13 @@ footer {
     }
 
     footer {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .card {
+        padding: 20px;
         border-radius: 5px;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .weather {
