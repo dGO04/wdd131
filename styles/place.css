@@ -7,22 +7,21 @@
     --primary-color: #ffff;
     --secondary-color: #D91023;
     --heading-color: #ffff;
-    --card-text-color: rgb(0, 100, 0);
-    --border-color: goldenrod;
+    --card-text-color: #006400;
+    --border-color: #daa520;
 }
 
 header, footer {
-    padding: 10px 20px;
+    padding: 40px;
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--heading-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: inherit;
 }
 
 header {
-    border-bottom: 5px solid var(--border-color);
-    padding: 20px;
+    border-bottom: 15px solid var(--border-color);
 }
 
 main {
@@ -43,7 +42,7 @@ picture img {
     background-color: var(--heading-color);
     color: var(--card-text-color);
     padding: 10px;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .card li {
@@ -72,9 +71,8 @@ picture img {
 }
 
 footer {
-    border-top: 5px solid var(--border-color);
+    border-top: 15px solid var(--border-color);
     background-color: var(--card-text-color);
-    font-size: 0.7rem;
 }
 
 /*--------------------Large Views----------------*/
@@ -82,17 +80,21 @@ footer {
 @media screen and (min-width: 800px) {
 
     header {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     footer {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .card {
-        padding: 20px;
+        padding: 25px;
         border-radius: 5px;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .card h2 {
+        margin-bottom: 20px;
     }
 
     .weather {
