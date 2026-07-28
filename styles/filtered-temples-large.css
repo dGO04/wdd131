@@ -3,6 +3,17 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .albumPhoto picture {
+        width: 100%;
+        height: 250px;
+    }
+
+    .albumPhoto img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
     #optionsMenu {
         display: none;
     }
@@ -26,4 +37,16 @@
     #photosAlbum {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .albumPhoto picture {
+        width: 100%;
+        height: 250px;
+    }
+
+.albumPhoto img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
 }
