@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: "Share Tech Mono", monospace;
+}
+
+header {
+    text-align: start;
+    height: auto;
+}
+
+header h1 {
+    font-family: "Silkscreen", sans-serif;
+    background-color:  #191919;
+    padding: 22px 20px;
+    color: white;
+}
+
+header div {
+    padding: 17px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #C84B31;
+}
+
+header p {
+    font-size: 22px;
+}
+
+.dc_comics {
+    background-color: #2D4059;
+    border-radius: 15px;
+    font-family: "Silkscreen", sans-serif;
+    padding: 0px 10px;
+}
+
+main {
+    margin: 15px;
+}
+
+main p {
+    font-size: 30px;
+    margin: 15px;
+    color: white;
+    background-color: #2D4059;
+    border: 10px solid #4D3052;
+}
+main img {
+    height: 400px;
+    width: auto;
+}
