@@ -99,6 +99,9 @@ main h1 {
 }
 
 .albumPhoto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     background-color: lightgray;
     padding: 25px;
 }
@@ -113,8 +116,15 @@ main h1 {
     font-size: 22px;
 }
 
-.albumPhoto img{
+.albumPhoto picture {
     width: 100%;
+    height: 250px;
+}
+
+.albumPhoto img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 .albumPhoto p:nth-child(4) {

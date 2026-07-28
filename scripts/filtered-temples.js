@@ -158,14 +158,16 @@ function generateTemples(templeList) {
         const dedication = document.createElement('p')
         const size = document.createElement('p')
         const image = document.createElement('img')
+        const imgFrame = document.createElement('picture')
 
         figcaption.appendChild(title)
         figcaption.appendChild(location)
         figcaption.appendChild(dedication)
         figcaption.appendChild(size)
 
+        imgFrame.appendChild(image)
         figure.appendChild(figcaption)
-        figure.appendChild(image)
+        figure.appendChild(imgFrame)
         photosAlbum.appendChild(figure)
 
         title.textContent = card.templeName
