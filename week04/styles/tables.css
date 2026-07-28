@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+thead th, thead td {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+
+#plans th {
+    background-color: #333;
+    border: 0.5px solid black;
+}
+
+tbody th, tbody td {
+    border: 0.5px solid gray;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#body tr:nth-child(2) {
+    background-color: lightgray;
+}

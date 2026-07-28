@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(247, 249, 249);
+    --secondary-color: rgba(0, 0, 0);
+    --header-title-color: rgb(247, 249, 249);
+    --heading-font: 'Open Sans', sans-serif;
+    --hover-color: rgb(66, 61, 61);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+header, footer {
+    width: inherit;
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    color: var(--header-title-color);
+    padding: 20px;
+}
+
+header span {
+    font-size: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+ul li {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    display: none;
+}
+
+.show li {
+    display: block
+}
+
+li:hover {
+    background-color: var(--hover-color);
+}
+
+#optionsMenu {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 40px;
+}
+
+#optionsMenu::before {
+    content: '☰';
+
+}
+
+#optionsMenu.show::before {
+    content: 'X'
+}
+
+header a {
+    text-decoration: none;
+    color: var(--header-title-color);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    margin: 20px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+#photosAlbum {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.albumPhoto {
+    background-color: lightgray;
+    padding: 25px;
+}
+
+.albumPhoto h2 {
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.albumPhoto p {
+    font-size: 22px;
+}
+
+.albumPhoto img{
+    width: 100%;
+}
+
+.albumPhoto p:nth-child(4) {
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+}
