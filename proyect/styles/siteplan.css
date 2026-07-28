@@ -14,13 +14,13 @@ header h1 {
     font-family: "Silkscreen", sans-serif;
     background-color:  #191919;
     padding: 22px 20px;
-    color: white;
+    color: #ffff;
 }
 
 header div {
     padding: 17px;
     display: flex;
-    color: white;
+    color: #ffff;
     justify-content: space-between;
     align-content: center;
     background-color: #C84B31;
@@ -44,11 +44,18 @@ main {
 main p {
     font-size: 30px;
     margin: 15px;
-    color: white;
+    color: #ffff;
     background-color: #2D4059;
     border: 10px solid #4D3052;
 }
 main img {
     height: 400px;
     width: auto;
+}
+
+footer {
+    padding: 20px;
+    background-color: #191919;
+    color: #ffff;
+    text-align: center;
 }
