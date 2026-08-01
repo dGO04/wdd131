@@ -112,7 +112,6 @@ footer, header h1 {
 #reviewFeedback {
     margin: 0 auto;
     padding: 40px;
-    border-radius: 0px;
     width: 40%;
     border-radius: var(--border-rd);
     border: 1px solid var(--border-color);
