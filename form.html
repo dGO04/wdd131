@@ -10,35 +10,37 @@
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    <main>
+    <header>
         <h1>Product Review</h1>
+    </header>
+    <main>
         <form action="review.html" method="get" id="productForm">
-            <label>Product Name <span id="requiredField">*</span>
+            <label>Product Name <span class="requiredField">*</span>
                 <select name="pName" id="pName" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </label>
-            <p id="ratingTitle">Overall Rating <span id="requiredField">*</span></p>
+            <p id="ratingTitle">Overall Rating <span class="requiredField">*</span></p>
             <div id="overallRating">
-                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star; </span></label>
-                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star; </span></label>
-                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star;&star;</span></label>
-                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star;&star;&star; </span></label>
-                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star;&star;&star;&star; </span></label>
+                <label><input type="radio" name="rating" id="rating1" class="rating" value="oneStar" required>&star;</label>
+                <label><input type="radio" name="rating" id="rating2" class="rating" value="twoStars" required>&star;&star;</label>
+                <label><input type="radio" name="rating" id="rating3" class="rating" value="threeStars" required>&star;&star;&star;</label>
+                <label><input type="radio" name="rating" id="rating4" class="rating" value="fourStars" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" id="rating5" class="rating" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
             </div>
-                <label>Date of Instalation <span id="requiredField">*</span>
+                <label>Date of Instalation <span class="requiredField">*</span>
                 <input type="date" name="date" required>
             </label>
                 <p>Which feature did you find usefull in the product?</p>
                 <p>(Check all that apply)</p>
-                <label id="feature"><input type="checkbox" name="durability" value="durability">Durability</label>
-                <label id="feature"><input type="checkbox" name="ease" value="ease of use">Ease of Use</label>
-                <label id="feature"><input type="checkbox" name="perform" value="performance">Performance</label>
-                <label id="feature"><input type="checkbox" name="design" value="design" class="last">Design</label>
-            <label>Written Review<span id="optional">(optional)</span>
+                <label id="feature1" class="feature"><input type="checkbox" name="durability" value="durability">Durability</label>
+                <label id="feature2" class="feature"><input type="checkbox" name="ease" value="ease of use">Ease of Use</label>
+                <label id="feature3" class="feature"><input type="checkbox" name="perform" value="performance">Performance</label>
+                <label id="feature4" class="feature"><input type="checkbox" name="design" value="design" class="last">Design</label>
+            <label>Written Review<span class="optional">(optional)</span>
                 <textarea name="review" id="review" rows="5"></textarea>
             </label>
-            <label>Your Name<span id="optional">(optional)</span>
+            <label>Your Name<span class="optional">(optional)</span>
                 <input type="text" name="name" id="name">
             </label>
             <input type="submit" value="Post Review" id="sendReview">

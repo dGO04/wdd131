@@ -7,9 +7,11 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #000;
-    --border-radius: 10px;
+    --border-rd: 10px;
     --border-color: #808080;
     --box-color: #eee;
+    --highlights: #000080;
+    --warning-color: #ff0000;
 }
 
 form {
@@ -17,7 +19,7 @@ form {
     background-color: var(--box-color);
     border: 1px solid var(--border-color);
     padding: 15px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-rd);
 }
 
 h1, 
@@ -36,12 +38,12 @@ input[type='date'] {
     width: 100%;
     height: 45px;
     margin-bottom: 20px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-rd);
     border: 1px solid var(--border-color);
 }
 
-#requiredField {
-    color: red;
+.requiredField {
+    color: var(--warning-color);
 }
 
 #ratingTitle {
@@ -59,22 +61,17 @@ input[type='date'] {
     margin-bottom: 15px;
 }
 
-#rating {
+.rating {
     margin-bottom: 5px;
 }
 
-#stars {
-    width: 100%;
-    height: auto;
-} 
-
-#feature {
+.feature {
     display: block;
     width: 100%;
     height: auto;
 }
 
-#feature input {
+.feature input {
     margin-right: 10px;
 }
 
@@ -88,14 +85,14 @@ textarea {
 
 input[type='submit'] {
     background-color: var(--secondary-color);
-    box-shadow: 1px 1px 4px gray;
+    box-shadow: 1px 1px 4px var(--border-color);
 }
 
-#optional {
-    color: navy;
+.optional {
+    color: var(--highlights);
 }
 
-footer, main h1 {
+footer, header h1 {
     text-align: center;
     padding: 10px;
     background-color: var(--secondary-color);
@@ -117,7 +114,7 @@ footer, main h1 {
     padding: 40px;
     border-radius: 0px;
     width: 40%;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-rd);
     border: 1px solid var(--border-color);
     background-color: var(--box-color);
     min-width: 150px;
@@ -130,14 +127,14 @@ footer, main h1 {
 
 #reviewsCount {
     font-size: 22px;
-    color: navy;
+    color: var(--highlights);
 }
 
 /*--------------------- Larger Views -------------------*/
 
 @media screen and (min-width: 400px) {
     
-    #rating {
+    .rating {
         width: 100%;
         display: block;
         height: auto;
