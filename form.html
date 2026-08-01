@@ -22,25 +22,25 @@
             </label>
             <p id="ratingTitle">Overall Rating <span class="requiredField">*</span></p>
             <div id="overallRating">
-                <label><input type="radio" name="rating" id="rating1" class="rating" value="oneStar" required>&star;</label>
-                <label><input type="radio" name="rating" id="rating2" class="rating" value="twoStars" required>&star;&star;</label>
-                <label><input type="radio" name="rating" id="rating3" class="rating" value="threeStars" required>&star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="rating4" class="rating" value="fourStars" required>&star;&star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="rating5" class="rating" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
+                <label for="rating1"><input type="radio" name="rating" id="rating1" class="rating" value="oneStar" required>&star;</label>
+                <label for="rating2"><input type="radio" name="rating" id="rating2" class="rating" value="twoStars" required>&star;&star;</label>
+                <label for="rating3"><input type="radio" name="rating" id="rating3" class="rating" value="threeStars" required>&star;&star;&star;</label>
+                <label for="rating4"><input type="radio" name="rating" id="rating4" class="rating" value="fourStars" required>&star;&star;&star;&star;</label>
+                <label for="rating5"><input type="radio" name="rating" id="rating5" class="rating" value="fiveStars" required>&star;&star;&star;&star;&star;</label>
             </div>
-                <label>Date of Instalation <span class="requiredField">*</span>
-                <input type="date" name="date" required>
+                <label for="date">Date of Instalation <span class="requiredField">*</span>
+                <input type="date" name="date" id="date" required>
             </label>
                 <p>Which feature did you find usefull in the product?</p>
                 <p>(Check all that apply)</p>
-                <label id="feature1" class="feature"><input type="checkbox" name="durability" value="durability">Durability</label>
-                <label id="feature2" class="feature"><input type="checkbox" name="ease" value="ease of use">Ease of Use</label>
-                <label id="feature3" class="feature"><input type="checkbox" name="perform" value="performance">Performance</label>
-                <label id="feature4" class="feature"><input type="checkbox" name="design" value="design" class="last">Design</label>
-            <label>Written Review<span class="optional">(optional)</span>
-                <textarea name="review" id="review" rows="5"></textarea>
+                <label class="feature" for="durabFeature"><input id="durabFeature" type="checkbox" name="durability" value="durability">Durability</label>
+                <label class="feature" for="easeFeature"><input id="easeFeature" type="checkbox" name="ease" value="ease of use">Ease of Use</label>
+                <label class="feature" for="performFeature"><input id="performFeature" type="checkbox" name="perform" value="performance">Performance</label>
+                <label class="feature" for="designFeature"><input id="designFeature" type="checkbox" name="design" value="design" class="last">Design</label>
+            <label for="writtenReview">Written Review<span class="optional">(optional)</span>
+                <textarea name="review" id="writtenReview" rows="5"></textarea>
             </label>
-            <label>Your Name<span class="optional">(optional)</span>
+            <label for="name">Your Name<span class="optional">(optional)</span>
                 <input type="text" name="name" id="name">
             </label>
             <input type="submit" value="Post Review" id="sendReview">
