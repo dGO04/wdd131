@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>WDD 131 | Forms | Diego Esquit</title>
+    <meta name="author" content="Diego Esquit">
+    <meta name="description" content="WDD 131 | Week 05 | Forms | Diego Esquit: Demonstrate I can code a form with good practices">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get" id="productForm">
+            <label>Product Name <span id="requiredField">*</span>
+                <select name="pName" id="pName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+            <p id="ratingTitle">Overall Rating <span id="requiredField">*</span></p>
+            <div id="overallRating">
+                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star; </span></label>
+                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star; </span></label>
+                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star;&star;</span></label>
+                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star;&star;&star; </span></label>
+                <label id="starRate"><input type="radio" name="rating" id="rating" required><span id="stars">&star;&star;&star;&star;&star; </span></label>
+            </div>
+                <label>Date of Instalation <span id="requiredField">*</span>
+                <input type="date" name="date" required>
+            </label>
+                <p>Which feature did you find usefull in the product?</p>
+                <p>(Check all that apply)</p>
+                <label id="feature"><input type="checkbox" name="durability" value="durability">Durability</label>
+                <label id="feature"><input type="checkbox" name="ease" value="ease of use">Ease of Use</label>
+                <label id="feature"><input type="checkbox" name="perform" value="performance">Performance</label>
+                <label id="feature"><input type="checkbox" name="design" value="design" class="last">Design</label>
+            <label>Written Review<span id="optional">(optional)</span>
+                <textarea name="review" id="review" rows="5"></textarea>
+            </label>
+            <label>Your Name<span id="optional">(optional)</span>
+                <input type="text" name="name" id="name">
+            </label>
+            <input type="submit" value="Post Review" id="sendReview">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> ⚜️ All Rights Reserved ⚜️ Diego Esquit</p>
+        <p id="lastModification"></p>
+    </footer>
+</body>
+</html>
