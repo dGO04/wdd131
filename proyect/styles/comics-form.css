@@ -1,0 +1,73 @@
+main {
+    margin: 0px;
+    padding: 0px;
+    grid-template-columns: 1fr;
+    white-space: initial;
+}
+
+:root {
+    --form-bg-color: #bab9b9;
+    --text-color: #000;
+    --header-font: "Silkscreen", sans-serif;
+    --form-title-color: #C84B31;
+    --button-color: #fff;
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: var(--header-font);
+    color: var(--form-title-color);
+
+}
+
+form {
+    background-color: var(--form-bg-color);
+    margin: 50px 20%;
+    margin-top: 5px;
+    padding: 20px;
+    height: auto;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+fieldset {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+fieldset:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+fieldset legend {
+    padding: 0px 10px;
+}
+
+form input, form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#fullName, #email, #comicsList {
+    border-left: 9px solid var(--form-title-color);
+}
+
+main p {
+    margin-top: 7px;
+    text-align: center;
+    overflow-wrap:break-word;
+    font-size: 13px;
+}
+
+form input[type='submit'] {
+    margin-top: 20px;
+    color: var(--button-color);
+    font-size: 16px;
+    background-color: var(--form-title-color);
+}

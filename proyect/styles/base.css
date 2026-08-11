@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: "Share Tech Mono", monospace;
+}
+
+:root {
+    --header-font: "Silkscreen", sans-serif;
+    --primary-color: #fff;
+    --secondary-color: #191919;
+    --second-accent-color: #4D3052;
+    --accent-color: #C84B31;
+    --third-accent-color: #2D4059;
+    --heading-color: #fff;
+}
+
+header {
+    text-align: start;
+    height: auto;
+}
+
+header h1 {
+    font-family: var(--header-font);
+    background-color: var(--secondary-color);
+    color: var(--heading-color);
+}
+
+header .comicsTitle {
+    padding: 17px;
+    display: flex;
+    color: var(--heading-color);
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--second-accent-color);
+}
+
+.deleteTitle {
+    display: none;
+    
+}
+
+header .title {
+    padding: 30px;
+    background-color: var(--secondary-color);
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.title a {
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+.title nav a {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    align-content: center;
+}
+
+.title nav a:hover {
+    background-color: #4D3052;
+    
+}
+
+.title nav {
+    margin-top: 10px;
+}
+
+#optionsMenu {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 35px;
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+#optionsMenu::before {
+    content: '☰';
+
+}
+
+#optionsMenu.showMenu::before {
+    content: 'X'
+}
+
+header .showMenu a {
+    display: block
+}
+
+header p {
+    font-size: 22px;
+}
+
+.dc_comics {
+    background-color: var(--third-accent-color);
+    border-radius: 15px;
+    font-family: "Silkscreen", sans-serif;
+    padding: 0px 10px;
+}
+
+#delete {
+    font-family: "Silkscreen", sans-serif;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    background-color: var(--second-accent-color);
+    border-radius: 10px;
+    border: 5px solid var(--accent-color);
+    display: block;
+}
+
+.card img {
+    width: inherit;
+    border-radius: 10px;
+    display: block;
+}
+
+.heroName {
+    text-align: center;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: inherit;
+}
+
+.addButton {
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--heading-color);
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    right: 35%;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: inherit;
+}
+
+.card img:hover {
+    opacity: 0.3;
+   box-shadow: 10px 10px 20px var(--secondary-color);
+}
+
+.card .show {
+    opacity: 1;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--heading-color);
+    text-align: center;
+}
+
+
+/*---------------- Medium Views --------------*/
+
+@media screen and (min-width: 600px) {
+ 
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .heroName, .addButton {
+        font-size: inherit;
+    }
+
+    header .title {
+        background-color: var(--secondary-color);
+    }
+
+}
+
+
+
+
+/*---------------- Large Views --------------*/
+
+@media screen and (min-width: 750px) {
+ 
+    main {
+        display: block;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .card {
+        height: 500px;
+        width: 150px;
+        margin: 10px 3px;
+        display: inline-block;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .heroName {
+        font-size: 85%;
+    }
+
+    header .title {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .title nav {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .title nav {
+        margin-top: 0px;
+    }
+
+    .title nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #optionsMenu {
+        display: none;
+    }
+
+}

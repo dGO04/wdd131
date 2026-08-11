@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: "Silkscreen", sans-serif; 
+    --third-accent-color: #2D4059;
+}
+
+.myTeamMain {
+    grid-template-columns: 1fr;
+}
+
+.holderImgs {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.holderImgs img {
+    width: 75px;
+}
+
+.teamEmpty {
+    font-family: var(--heading-font);
+    color: var(--third-accent-color);
+    font-size: 20px;
+    display: block; 
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Dwars: My Team</title>
+    <meta name="author" content="Diego Esquit">
+    <meta name="description" content="WDD 131 | Diego Esquit: Page that displays all the members from your
+    personalized superhero Team, you add these superheroes from the Home Page">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/comics-form.css">
+    <script src="scripts/base.js" defer></script>
+    <!--Silkscreen font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <!--#Share Tech Mono font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="comicsTitle">
+            <p>50% off in Marvel and DC comics. Apply Now!</p>
+            <p id="delete">X</p>
+        </div>
+        <div class="title">
+            <a href="index.html"><h1>Secret <span class="dc_comics">D</span>wars</h1></a>
+            <a href="#" class="hamburger" id="optionsMenu"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="comics-form.html">Comics</a>
+                <a href="my-team.html">My Team</a>
+            </nav>
+        </div>
+    </header>
+    <main id="myTeamMain" class="myTeamMain">
+        <h1>Comic Discount Trivia</h1>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            </fieldset>
+            <fieldset>
+                <legend>Comic Details</legend>
+                <label for="comicsList">Comics List</label>
+                <select name="comicsList" id="comicsList" required>
+                    <option value="" disabled selected>Select an Option</option>
+                    <option value="The Infinity Gauntlet">The Infinity Gauntlet</option>
+                    <option value="Civil War">Civil War</option>
+                    <option value="The Night Gwen Stacy Died">The Night Gwen Stacy Died</option>
+                    <option value="Days of Future Past">Days of Future Past</option>
+                    <option value="Secret Wars">Secret Wars</option>
+                    <option value="Watchmen">Watchmen</option>
+                    <option value="The Dark Knight Returns">The Dark Knight Returns</option>
+                    <option value="The Death of Superman">The Death of Superman</option>
+                    <option value="Kingdom Come">Kingdom Come</option>
+                    <option value="Flashpoint">Flashpoint</option>
+                </select>
+                <label for="otherComic">Other Comic</label>
+                <input type="text" name="otherComic" id="otherComic">
+            </fieldset>
+            <input type="submit" name="sendRequest" id="submit" value="Request Trivia">
+            <p>We will send to your email 10 quiz questions related to the comic you chose. If you answer all of them correctly, you will get a 25% discount on that comic.</p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> ⚜️ Diego Esquit ⚜️ All Rights Reserved</p>
+        <p id="lastModification"></p>
+    </footer>
+</body>
+</html>

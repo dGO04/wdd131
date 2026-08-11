@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Dwars: My Team</title>
+    <meta name="author" content="Diego Esquit">
+    <meta name="description" content="WDD 131 | Diego Esquit: Page that displays all the members from your
+    personalized superhero Team, you add these superheroes from the Home Page">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/my-team.css">
+    <script src="scripts/base.js" defer></script>
+    <!--Silkscreen font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <!--#Share Tech Mono font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="comicsTitle">
+            <p>50% off in Marvel and DC comics. Apply Now!</p>
+            <p id="delete">X</p>
+        </div>
+        <div class="title">
+            <a href="index.html"><h1>Secret <span class="dc_comics">D</span>wars</h1></a>
+            <a href="#" class="hamburger" id="optionsMenu"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="comics-form.html">Comics</a>
+                <a href="my-team.html">My Team</a>
+            </nav>
+        </div>
+    </header>
+    <main id="myTeamMain" class="myTeamMain">
+        <div class="holderImgs">
+            <p class="teamEmpty">Team empty. Recruit a superhero!!</p>
+            <img src="images/placeholder-images/loading_batman.webp" alt="Batman full body pixelart" loading="lazy">
+            <img src="images/placeholder-images/loading_ironman.webp" alt="Iron man full body pixelart" loading="lazy">
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> ⚜️ Diego Esquit ⚜️ All Rights Reserved</p>
+        <p id="lastModification"></p>
+    </footer>
+</body>
+</html>
